@@ -45,18 +45,27 @@ namespace WinRTHelper.SharingData
 
         private Window window;
 
-        public ShareIt(Window window, string Title, string Description)
+        public ShareIt(IntPtr hwnd, string Title, string Description)
         {
-            this.window = window;
-            hwnd = new WindowInteropHelper(window).Handle;
-            //var s = DataTransferManager.GetForCurrentView();
+            this.hwnd = hwnd;
             dtm = DataTransferManagerHelper.GetForWindow(hwnd);
-            //dtm.ShareProvidersRequested += Dtm_ShareProvidersRequested;
-            //dtm.TargetApplicationChosen += Dtm_TargetApplicationChosen;
             dtm.DataRequested += OnDataRequested;
             this.Title = Title;
             this.Description = Description;
         }
+
+        public ShareIt(Window window, string Title, string Description) : this(new WindowInteropHelper(window).Handle, Title, Description)
+        {
+            this.window = window;
+            //hwnd = new WindowInteropHelper(window).Handle;
+            //var s = DataTransferManager.GetForCurrentView();
+            //dtm = DataTransferManagerHelper.GetForWindow(hwnd);
+            //dtm.ShareProvidersRequested += Dtm_ShareProvidersRequested;
+            //dtm.TargetApplicationChosen += Dtm_TargetApplicationChosen;
+            //dtm.DataRequested += OnDataRequested;
+
+        }
+        public ShareIt(Window window) : this(window, string.Empty, string.Empty) { }
 
         private void Dtm_TargetApplicationChosen(DataTransferManager sender, TargetApplicationChosenEventArgs args)
         {
@@ -68,7 +77,6 @@ namespace WinRTHelper.SharingData
             Debug.WriteLine("ShareProvidersRequested");
         }
 
-        public ShareIt(Window window) : this(window, string.Empty, string.Empty) { }
 
         async void OnDataRequested(DataTransferManager sender, DataRequestedEventArgs args)
         {
@@ -153,9 +161,9 @@ namespace WinRTHelper.SharingData
         {
             Mode = shareMode;
             Content = content;
-            IntPtr hwnd = new WindowInteropHelper(window).Handle;
+            //IntPtr hwnd = new WindowInteropHelper(window).Handle;
             //Debug.WriteLine("IntPtr window:" + hwnd.ToString());
-            DataTransferManagerHelper.ShowShareUIForWindow(hwnd);
+            DataTransferManagerHelper.ShowShareUIForWindow(this.hwnd);
         }
 
     }

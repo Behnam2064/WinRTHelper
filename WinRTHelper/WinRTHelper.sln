@@ -1,0 +1,44 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.10.35027.167
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{B228CF32-3F47-467A-91C6-7B7AF0B02F15}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{35518940-4C2E-4011-903C-9EFD2C5EF574}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "docs", "docs", "{F8733BAC-2930-4AAA-AE37-F8CB094FF3B3}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SharingDataTest", "SharingDataTest", "{B0FA655A-E234-4652-8C35-901D2DC40592}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WinRTHelper", "WinRTHelper\WinRTHelper.csproj", "{50E255CF-12BE-4622-972A-FD0DCD6D0D59}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SharingDataWinTest", "SharingDataWinTest\SharingDataWinTest.csproj", "{9AB22273-8C35-40D7-81D9-145F25B396AA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{50E255CF-12BE-4622-972A-FD0DCD6D0D59}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{50E255CF-12BE-4622-972A-FD0DCD6D0D59}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{50E255CF-12BE-4622-972A-FD0DCD6D0D59}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{50E255CF-12BE-4622-972A-FD0DCD6D0D59}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9AB22273-8C35-40D7-81D9-145F25B396AA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9AB22273-8C35-40D7-81D9-145F25B396AA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9AB22273-8C35-40D7-81D9-145F25B396AA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9AB22273-8C35-40D7-81D9-145F25B396AA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{B0FA655A-E234-4652-8C35-901D2DC40592} = {35518940-4C2E-4011-903C-9EFD2C5EF574}
+		{50E255CF-12BE-4622-972A-FD0DCD6D0D59} = {B228CF32-3F47-467A-91C6-7B7AF0B02F15}
+		{9AB22273-8C35-40D7-81D9-145F25B396AA} = {B0FA655A-E234-4652-8C35-901D2DC40592}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8740A5D3-F967-4526-8C5C-7C962CB0A886}
+	EndGlobalSection
+EndGlobal

@@ -5,6 +5,8 @@ using System.Data;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows;
+using WinSDKHelperNF.Notifications;
+
 
 namespace SharingDataWinTest
 {
@@ -13,5 +15,11 @@ namespace SharingDataWinTest
     /// </summary>
     public partial class App : Application
     {
+
+
+        private void ApplicationStartup(object sender, StartupEventArgs e)
+        {
+            
+        }
     }
 }

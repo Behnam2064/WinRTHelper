@@ -12,7 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
-using WinRTHelper.SharingData;
+using WinRTHelper.SharingDataApi;
 
 namespace SharingDataWinTest
 {

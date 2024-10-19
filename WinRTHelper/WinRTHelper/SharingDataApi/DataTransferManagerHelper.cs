@@ -7,7 +7,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Windows.ApplicationModel.DataTransfer;
 
-namespace WinRTHelper.SharingData
+namespace WinRTHelper.SharingDataApi
 {
     static class DataTransferManagerHelper
     {

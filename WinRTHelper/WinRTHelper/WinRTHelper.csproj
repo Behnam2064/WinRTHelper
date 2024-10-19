@@ -61,8 +61,8 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <Compile Include="SharingData\DataTransferManagerHelper.cs" />
-    <Compile Include="SharingData\ShareIt.cs" />
+    <Compile Include="SharingDataApi\DataTransferManagerHelper.cs" />
+    <Compile Include="SharingDataApi\ShareIt.cs" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -77,5 +77,6 @@
       <Version>10.0.26100.1</Version>
     </PackageReference>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

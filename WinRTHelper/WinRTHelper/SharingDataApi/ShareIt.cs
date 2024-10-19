@@ -14,7 +14,7 @@ using Windows.ApplicationModel.DataTransfer;
 using Windows.Storage;
 using Windows.Storage.Streams;
 
-namespace WinRTHelper.SharingData
+namespace WinRTHelper.SharingDataApi
 {
     public enum ShareMode
     {

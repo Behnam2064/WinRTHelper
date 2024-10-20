@@ -6,7 +6,7 @@ using System.Runtime.InteropServices;
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
 [assembly: AssemblyTitle("WinRTHelper")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyDescription("Classes for easier use of some Microsoft APIs")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
 [assembly: AssemblyProduct("WinRTHelper")]

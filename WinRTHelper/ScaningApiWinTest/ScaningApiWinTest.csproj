@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{9AB22273-8C35-40D7-81D9-145F25B396AA}</ProjectGuid>
+    <ProjectGuid>{F38B2BB6-5906-4793-8B92-060152546F4A}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>SharingDataWinTest</RootNamespace>
-    <AssemblyName>SharingDataWinTest</AssemblyName>
+    <RootNamespace>ScaningApiWinTest</RootNamespace>
+    <AssemblyName>ScaningApiWinTest</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
@@ -93,11 +93,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="image01.jpg">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\WinRTHelper\WinRTHelper.csproj">

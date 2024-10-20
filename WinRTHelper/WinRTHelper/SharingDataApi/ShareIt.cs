@@ -7,9 +7,7 @@ using System.Security.Policy;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
-using System.Windows.Interop;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
+//using System.Windows.Interop;
 using Windows.ApplicationModel.DataTransfer;
 using Windows.Storage;
 using Windows.Storage.Streams;
@@ -43,7 +41,7 @@ namespace WinRTHelper.SharingDataApi
 
         public string Description { get; set; }
 
-        private Window window;
+        //private Window window;
 
         public ShareIt(IntPtr hwnd, string Title, string Description)
         {
@@ -54,9 +52,9 @@ namespace WinRTHelper.SharingDataApi
             this.Description = Description;
         }
 
-        public ShareIt(Window window, string Title, string Description) : this(new WindowInteropHelper(window).Handle, Title, Description)
-        {
-            this.window = window;
+        //public ShareIt(Window window, string Title, string Description) : this(new WindowInteropHelper(window).Handle, Title, Description)
+        //{
+          //  this.window = window;
             //hwnd = new WindowInteropHelper(window).Handle;
             //var s = DataTransferManager.GetForCurrentView();
             //dtm = DataTransferManagerHelper.GetForWindow(hwnd);
@@ -64,8 +62,8 @@ namespace WinRTHelper.SharingDataApi
             //dtm.TargetApplicationChosen += Dtm_TargetApplicationChosen;
             //dtm.DataRequested += OnDataRequested;
 
-        }
-        public ShareIt(Window window) : this(window, string.Empty, string.Empty) { }
+        //}
+        //public ShareIt(Window window) : this(window, string.Empty, string.Empty) { }
 
         private void Dtm_TargetApplicationChosen(DataTransferManager sender, TargetApplicationChosenEventArgs args)
         {
